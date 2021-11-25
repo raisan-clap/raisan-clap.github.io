@@ -5372,6 +5372,9 @@ body.is-preload .items.onload-fade-in > * > .inner {
 section.style1 {
   min-height: 100vh; }
 
+body {
+  will-change: animation; }
+
 /* Wrapper */
 #wrapper {
   background-color: inherit;
