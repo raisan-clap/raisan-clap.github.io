@@ -151,8 +151,8 @@
 					}
 
 					&.on#{$event}-image-fade-left {
-						.image {
-							@include vendor('transition', (
+						.banner {
+						    @include vendor('transition', (
 								'opacity #{$y} ease-in-out',
 								'transform #{$y} ease-in-out'
 							));
@@ -242,9 +242,21 @@
 			@include vendor('align-self', 'center');
 			@include vendor('flex-grow', '1');
 			@include vendor('flex-shrink', '1');
-			width: 50%;
-			max-width: (_size(inner) * 0.75);
-			margin: 0 auto;
+			//width: 50%;
+			//max-width: (_size(inner) * 0.75);
+                        height: 60vh;
+                        width: 60vh;
+                        max-width: 60vh;
+                        border-radius: 50%;
+                        box-shadow: 0 0 0 2px #FFF, 0 0 0 8px $hinomaru;
+                        h1{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            height: 100%;
+                        }
+                        
 		}
 
 		.image {
@@ -291,16 +303,17 @@
 		}
 
 		@include orientation(portrait) {
-			@include vendor('flex-direction', 'column-reverse');
+			@include vendor('flex-direction', 'column');
 			text-align: center;
 
 			.content {
 				@include vendor('display', 'flex');
 				@include vendor('flex-direction', 'column');
 				@include vendor('justify-content', 'center');
-				width: 100%;
-				max-width: 100%;
-			}
+                                max-height: 40vh;
+				width: 40vh;
+				max-width: 40vh;
+                        }
 
 			.image {
 				width: 100%;
@@ -317,7 +330,7 @@
 
 					@include orientation(portrait) {
 						.content {
-							min-height: 50vh;
+							min-height: 40vh;
 						}
 
 						.image {

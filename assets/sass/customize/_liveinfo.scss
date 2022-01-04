@@ -12,6 +12,14 @@
         margin-right: 1rem;
     }
 }
+@media (min-width: 737px){
+    .wide{
+        //padding-top: 20vh;
+    }
+    .wide-images .image{
+        background: white;
+    }
+}
 
 .liveinfo {
     .inner {
@@ -29,5 +37,22 @@ section.style1 {
 
 body{
     will-change: animation;
+}
+
+.banner {
+    background-image:url("../../images/wave.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom 0vh right 0px;
+    .content{
+        background-color: $hinomaru;
+        height: 10px;
+        h1{
+            color: white;
+        }
+    }
+    .image{
+        background-color: rgba(255,255,255,0);
+    }
 }
 
