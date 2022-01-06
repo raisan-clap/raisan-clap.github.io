@@ -2146,7 +2146,6 @@ body.is-preload .banner.onload-image-fade-in .image img {
   text-align: left;
   overflow-x: hidden; }
   .banner.style1 .content {
-    padding: 7rem 7rem 5rem 7rem ;
     -moz-align-self: center;
     -webkit-align-self: center;
     -ms-align-self: center;
@@ -2159,6 +2158,7 @@ body.is-preload .banner.onload-image-fade-in .image img {
     -webkit-flex-shrink: 1;
     -ms-flex-shrink: 1;
     flex-shrink: 1;
+    padding: 0;
     height: 60vh;
     width: 60vh;
     max-width: 60vh;
