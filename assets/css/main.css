@@ -108,7 +108,7 @@ body {
   color: #000000; }
 
 body, input, select, textarea {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Shippori Mincho B1", serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.65; }
@@ -5396,6 +5396,13 @@ body {
       color: white; }
   .banner .image {
     background-color: rgba(255, 255, 255, 0); }
+
+.raisan.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; }
 
 /* Wrapper */
 #wrapper {

@@ -9,6 +9,9 @@
 	  <title>礼讃Clap</title>
 	  <meta charset="utf-8" />
 	  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho&display=swap" rel="stylesheet">
 	  <link rel="stylesheet" href="assets/css/main.css" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-47DNCF4YTN"></script>
@@ -26,11 +29,9 @@
     <!-- Wrapper -->
     <div id="wrapper" class="divided">
         <!-- One -->
-          <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-up">
-            <div class="content">
-              <h1>礼讃Clap</h1>
-            </div>
-            <div class="image background">
+          <section class="raisan logo">
+            <div class="screenimage">
+              <img src="images/raisan_logo.png">
             </div>
           </section>
 
@@ -45,7 +46,6 @@
                 それってじつはとっても素敵なことだと思う。<br>
               </p>
             </div>
-
             <!-- Gallery -->
               <div class="gallery style2 medium lightbox onscroll-fade-in liveinfo">
                 <article>
@@ -56,18 +56,17 @@
                   </div>
                 </article>
                 <article>
-                  <a href="images/gallery/2022/20220505b.jpg" class="image">
-                    <img src="images/gallery/2022/20220505b.jpg" alt="" />
+                  <a href="images/gallery/2022/20220505b.png" class="image">
+                    <img src="images/gallery/2022/20220505b.png" alt="" />
                   </a>
                   <div class="caption">
                   </div>
                 </article>
               </div>
-
           </section>
-
           
-        <!-- Two -->
+          <!-- Two -->
+
           <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
             <div class="content">
               <h2>代表  井深 慎也 (太鼓)</h2>
@@ -116,11 +115,22 @@
               </ul>
             </div>
             <div class="image">
-              <img src="images/ArtistSide.JPG" alt="" />
+              <img src="images/ArtistSide.jpeg" alt="" />
             </div>
           </section>
 
-          
+          <section class="spotlight style1 orient-right content-align-right image-position-center onscroll-image-fade-in wide-images">
+            <div class="content">
+              <h2>伊藤 千尋 (民謡)</h2>
+              <ul class="actions stacked">
+                <!-- <li><a href="#" class="button">Learn More</a></li> -->
+              </ul>
+            </div>
+            <div class="image">
+              <img src="images/backgrounderaser_1645006729.jpg" alt="" />
+            </div>
+                    </section>
+                    
           <!-- Footer -->
           <footer class="wrapper style1 align-center">
             <div class="inner">
@@ -128,7 +138,7 @@
                 <li><a href="https://twitter.com/RaisanClap" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
                 <li><a href="https://www.instagram.com/raisan_clap_/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
               </ul>
-              <p>&copy; 2022 <a href="">礼賛Clap</a>. All Right Reserved.</p>
+              <p>&copy; 2022 <a href="">礼讃Clap</a>. All Right Reserved.</p>
             </div>
           </footer>
 
@@ -138,11 +148,20 @@
       <script src="assets/js/jquery.min.js"></script>
       <script src="assets/js/jquery.scrollex.min.js"></script>
       <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/jquery.bgswitcher.js"></script>
+      <script src="assets/js/jquery.backstretch.min.js"></script>
       <script src="assets/js/browser.min.js"></script>
       <script src="assets/js/breakpoints.min.js"></script>
       <script src="assets/js/util.js"></script>
       <script src="assets/js/main.js"></script>
       <script src="assets/js/customize.js"></script>
+      <script>
+        $(".raisan").backstretch(
+          ["/images/pic01.jpg",
+          "/images/pic02.jpg"
+        ],
+        {druation:8000,fade:500})
 
+      </script>
   </body>
 </html>
